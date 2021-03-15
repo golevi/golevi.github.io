@@ -5,20 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoLevi</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            width:960px;
+            margin:0 auto;
+        }
+        header {
+            display:flex;
+            align-items:center;
+        }
+        .header-logo {
+            max-width:50px;
+        }
+        header h1 {
+            margin-left:10px;
+        }
+        .cards {
+            max-width:100%;
+            display:flex;
+            justify-content: space-between;
+        }
+        .card {
+            border:1px solid #ccc;
+            width:30%;
+            padding:10px;
+        }
+        h1, h2 {
+            font-family: 'Roboto', sans-serif;
+        }
+        h2 {
+            color:#444;
+        }
+    </style>
 </head>
 <body>
-    <h1>GoLevi</h1>
-    <img src="/golevi.png" alt="GoLevi">
-    <h2>Caddy Cache Handler</h2>
+    <header>
+        <div>
+            <img class="header-logo" src="/golevi.png" alt="GoLevi">
+        </div>
+        <div>
+            <h1>GoLevi</h1>
+        </div>
+    </header>
 
-    <p>HTTP Cache Handler for the <a href="https://caddyserver.com/" target="_BLANK">Caddy webserver</a>.</p>
+    <div class="cards">
+        <div class="card">
+            <h2>Caddy Cache Handler</h2>
 
-    <p><small><a href="https://github.com/golevi/cache-handler">Repository</a></small></p>
+            <p>HTTP Cache Handler for the <a href="https://caddyserver.com/" target="_BLANK">Caddy webserver</a>.</p>
 
-    <h2>Cloudflare Allow IP</h2>
+            <p><small><a href="https://github.com/golevi/cache-handler">Repository</a></small></p>
+        </div>
 
-    <p>Easily add your IP address to your Cloudflare Firewall's allow list.</p>
+        <div class="card">
+            <h2>Cloudflare Allow IP</h2>
 
-    <p><small><a href="https://github.com/golevi/cfallow">Repository</a></small></p>
+            <p>Easily add your IP address to your Cloudflare Firewall's allow list.</p>
+
+            <p><small><a href="https://github.com/golevi/cfallow">Repository</a></small></p>
+        </div>
+
+        <div class="card">
+            <h2>SecMail</h2>
+
+            <p> Send encrypted emails using MailGun.</p>
+
+            <p><small><a href="https://github.com/golevi/secmail">Repository</a></small></p>
+        </div>
+    </div>
 </body>
 </html>
